@@ -73,102 +73,103 @@ header{
   margin: auto;
   justify-content: space-between;
   border-bottom: 1px solid rgba(0,0,0,0.1);
+  z-index: 3;
   
+  
+   .logo-holder{
+     display: flex;
+     padding: 10px;
+     align-items: center;
+     font-weight: 600;
+     color: var(--base-800);
 
 
+     .logo {
+       display: flex;
+       background-color: var(--base-800);
+       color: var(--base-100);
+       height: 64px;
+       width: 64px;
+       border-radius: 50%;
+       align-items: center;
+       justify-content: center;
+       font-size: 32px;
+       margin-right: 20px;
 
-  .logo-holder{
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    font-weight: 600;
-    color: var(--base-800);
-
-
-    .logo {
-      display: flex;
-      background-color: var(--base-800);
-      color: var(--base-100);
-      height: 64px;
-      width: 64px;
-      border-radius: 50%;
-      align-items: center;
-      justify-content: center;
-      font-size: 32px;
-      margin-right: 20px;
-
-    }
-    .logo-text{
-      flex: 1;
+     }
+     .logo-text{
+       flex: 1;
     
-    }
+     }
 
 
-  }
+   } 
 
-  nav{
-    display: flex;
-    align-items: center;
-    ul {
-      display: flex;
-      list-style-type: none;
-      gap: 5px;
+   nav{
+     display: flex;
+     align-items: center;
+     ul {
+       display: flex;
+       list-style-type: none;
+       gap: 5px;
       
-      li{
-        display: inline-block;
-        a{ 
-          display: inline-block;
-          padding: 10px 20px;
-          color: var(--base);
-          &:hover{
-            background-color: var(--base-100);
-            border-radius: 10px;
-            text-decoration: none;
-          }
-        }
-      }
-    }
+       li{
+         display: inline-block;
+         a{ 
+           display: inline-block;
+           padding: 10px 20px;
+           color: var(--base);
+           &:hover{
+             background-color: var(--base-100);
+             border-radius: 10px;
+             text-decoration: none;
+           }
+         }
+       }
+     }
 
-      .mobile-toggle{ 
-      display: none; 
-      color: var(--base-800);
-      padding: 10px;
-      @media (max-width:768px){
-        display:inline-block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
+       .mobile-toggle{ 
+       display: none; 
+       color: var(--base-800);
+       padding: 10px;
+       @media (max-width:768px){
+         display:inline-block;
+         position: absolute;
+         top: 20px;
+         right: 20px;
 
-      } 
+       } 
+     }
+   }
+
+   @media (max-width:1024px){
+     flex-direction: column;
+     align-items: center;
+   }
+
+
+   @media (max-width:768px){
+     flex-direction: column;
+     align-items: center;
+     nav{
+       margin-top: 10px;
+       width: 100%;
+       ul{
+         display:none ;
+         flex-direction: column;
+         text-align: center;
+         width: 100%;
+         a {
+           width: 100%;
+         }
+         &.active{
+           display: flex;
+         }
+       }
     }
   }
 
-  @media (max-width:1024px){
-    flex-direction: column;
-    align-items: center;
-  }
 
-
-  @media (max-width:768px){
-    flex-direction: column;
-    align-items: center;
-    nav{
-      margin-top: 10px;
-      width: 100%;
-      ul{
-        display:none ;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        a {
-          width: 100%;
-        }
-        &.active{
-          display: flex;
-        }
-      }
-    }
-  }
 }
 
 #checkbox{
@@ -213,6 +214,7 @@ header{
   background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
   background-size: cover;
 }
+
 
 
 .button{
@@ -415,6 +417,38 @@ h3{
     z-index: 1;
    
   }
+}
+
+#eye1{
+  top: -285px;
+  left: 117px;
+
+  @media (max-width:1024px){
+   top: -257px;
+   left: 103px;
+  }
+
+  @media (max-width:768px){
+    top: -260px;
+    left: 122px;
+   }
+
+}
+
+#eye2{
+  top: -289px;
+  left: 138px;
+
+  @media (max-width:1024px){
+   top: -260px;
+   left: 121px;
+  }
+
+  @media (max-width:768px){
+    top: -257px;
+    left: 103px;
+   }
+
 }
 
 
